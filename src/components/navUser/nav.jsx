@@ -17,7 +17,7 @@ const Nav = () => {
         }
 
         try {
-            await fetch('https://backend-24na.onrender.com/api/logout', {
+            await fetch('https://backend-f880.onrender.com/api/logout', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${user.token}`

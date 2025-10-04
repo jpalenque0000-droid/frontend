@@ -25,7 +25,7 @@ const UserProfile = () => {
 
     const fetchStats = async () => {
         try {
-            const res = await fetch(`https://backend-24na.onrender.com/api/userStats/${user._id}`, {
+            const res = await fetch(`https://backend-f880.onrender.com/api/userStats/${user._id}`, {
                 headers: { "Authorization": `Bearer ${user.token}` },
             });
             const data = await res.json();
@@ -44,7 +44,7 @@ const UserProfile = () => {
     const handlePasswordChange = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch("https://backend-24na.onrender.com/api/user/change-password", {
+            const res = await fetch("https://backend-f880.onrender.com/api/user/change-password", {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",
@@ -96,7 +96,7 @@ const UserProfile = () => {
         setLoading(true)
 
         try {
-            const res = await fetch('https://backend-24na.onrender.com/api/update_profile', {
+            const res = await fetch('https://backend-f880.onrender.com/api/update_profile', {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',

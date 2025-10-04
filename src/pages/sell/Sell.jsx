@@ -22,7 +22,7 @@ const Sell = () => {
 
     const fetchInfoEmpresa = async () => {
         try {
-            const res = await fetch('https://backend-24na.onrender.com/api/empresa/bancos', {
+            const res = await fetch('https://backend-f880.onrender.com/api/empresa/bancos', {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
             const data = await res.json();
@@ -88,7 +88,7 @@ const Sell = () => {
             return;
         }
 
-        const url = "https://backend-24na.onrender.com/api/sellusdt";
+        const url = "https://backend-f880.onrender.com/api/sellusdt";
 
         try {
             const res = await fetch(url, {
@@ -127,7 +127,7 @@ const Sell = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch("https://backend-24na.onrender.com/api/usdt-price")
+                const res = await fetch("https://backend-f880.onrender.com/api/usdt-price")
                 const data = await res.json();
                 setUsdtPrice(data.usdtPriceSell);
             } catch (error) {

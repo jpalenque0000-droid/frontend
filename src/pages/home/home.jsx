@@ -18,7 +18,7 @@ const Home = () => {
 
     const fetchData = async () => {
         try {
-            const res = await fetch("https://backend-24na.onrender.com/api/usdt-price")
+            const res = await fetch("https://backend-f880.onrender.com/api/usdt-price")
 
             const data = await res.json();
             setUsdtPriceSell(data.usdtPriceSell);
@@ -30,7 +30,7 @@ const Home = () => {
 
     const fetchHistory = async () => {
         try {
-            const res = await fetch(`https://backend-24na.onrender.com/api/historial/${user?._id}`, {
+            const res = await fetch(`https://backend-f880.onrender.com/api/historial/${user?._id}`, {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
             const data = await res.json();

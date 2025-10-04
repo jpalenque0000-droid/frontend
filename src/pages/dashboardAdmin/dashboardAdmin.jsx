@@ -28,7 +28,7 @@ const DashboardAdmin = () => {
     const fetchCompras = async () => {
         setLoadingCompras(true);
         try {
-            const res = await fetch('https://backend-24na.onrender.com/api/admin/buys', {
+            const res = await fetch('https://backend-f880.onrender.com/api/admin/buys', {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
             const data = await res.json();
@@ -42,7 +42,7 @@ const DashboardAdmin = () => {
     const fetchVentas = async () => {
         setLoadingVentas(true);
         try {
-            const res = await fetch('https://backend-24na.onrender.com/api/admin/sales', {
+            const res = await fetch('https://backend-f880.onrender.com/api/admin/sales', {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
             const data = await res.json();
@@ -55,7 +55,7 @@ const DashboardAdmin = () => {
 
     const fetchEstadisticas = async () => {
         try {
-            const res = await fetch('https://backend-24na.onrender.com/api/admin/estadisticas', {
+            const res = await fetch('https://backend-f880.onrender.com/api/admin/estadisticas', {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
             const data = await res.json();
@@ -67,7 +67,7 @@ const DashboardAdmin = () => {
 
     const actualizarCompra = async (id, estado) => {
         try {
-            const res = await fetch(`https://backend-24na.onrender.com/api/admin/buy/${id}`, {
+            const res = await fetch(`https://backend-f880.onrender.com/api/admin/buy/${id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",
@@ -91,7 +91,7 @@ const DashboardAdmin = () => {
 
     const actualizarVenta = async (id, estado) => {
         try {
-            const res = await fetch(`https://backend-24na.onrender.com/api/admin/sell/${id}`, {
+            const res = await fetch(`https://backend-f880.onrender.com/api/admin/sell/${id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",
@@ -115,7 +115,7 @@ const DashboardAdmin = () => {
 
     const fetchInfoEmpresa = async () => {
         try {
-            const res = await fetch('https://backend-24na.onrender.com/api/empresa/bancos', {
+            const res = await fetch('https://backend-f880.onrender.com/api/empresa/bancos', {
                 headers: { Authorization: `Bearer ${user.token}` },
             });
             const data = await res.json();
@@ -135,7 +135,7 @@ const DashboardAdmin = () => {
 
     const handleSaveConfig = async () => {
         try {
-            await fetch(`https://backend-24na.onrender.com/api/empresa/bancos`, {
+            await fetch(`https://backend-f880.onrender.com/api/empresa/bancos`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -162,7 +162,7 @@ const DashboardAdmin = () => {
 
     const handleSavePrices = async () => {
         try {
-            const res = await fetch("https://backend-24na.onrender.com/api/usdt-price", {
+            const res = await fetch("https://backend-f880.onrender.com/api/usdt-price", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -231,7 +231,7 @@ const DashboardAdmin = () => {
 
     const fetchData = async () => {
         try {
-            const res = await fetch("https://backend-24na.onrender.com/api/usdt-price")
+            const res = await fetch("https://backend-f880.onrender.com/api/usdt-price")
 
             const data = await res.json();
             setUsdtPriceSell(data.usdtPriceSell);

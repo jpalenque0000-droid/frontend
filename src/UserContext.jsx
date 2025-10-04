@@ -10,7 +10,7 @@ export const UserProvider = ({ children }) => {
         if (!token) return
 
         try {
-            const res = await fetch('https://backend-24na.onrender.com/api/get_user_info', {
+            const res = await fetch('https://backend-f880.onrender.com/api/get_user_info', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`

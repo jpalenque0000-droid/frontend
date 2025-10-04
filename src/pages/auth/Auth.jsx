@@ -37,7 +37,7 @@ const Auth = () => {
     const toastId = toast.loading('Iniciando sesión...');
 
     try {
-      const res = await fetch('https://backend-24na.onrender.com/api/login', {
+      const res = await fetch('https://backend-f880.onrender.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -82,7 +82,7 @@ const Auth = () => {
     }
 
     try {
-      const res = await fetch('https://backend-24na.onrender.com/api/register', {
+      const res = await fetch('https://backend-f880.onrender.com/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
